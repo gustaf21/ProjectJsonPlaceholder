@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import * as Mui from "@material-ui/core";
+import rog from "./rog.gif"; 
 
 class Posts extends Component  {
   constructor(props) {
@@ -21,16 +22,44 @@ class Posts extends Component  {
 
     return(
         <div>
-            <center>
-              <Mui.ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-  <Mui.Button href="/Posts">POSTS</Mui.Button>
-  <Mui.Button href="/Coment">COMMENTS</Mui.Button>
-  <Mui.Button href="/Albums">ALBUMS</Mui.Button>
-  <Mui.Button href="/Photos">PHOTOS</Mui.Button>
-  <Mui.Button href="/Todos">TODOS</Mui.Button>
-  <Mui.Button href="/Users">USERS</Mui.Button>
-</Mui.ButtonGroup>
+          <center>
+          <nav class="nav-extended blue darken-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">DATA</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="https://www.tiktok.com/id/" class="sidebar-navigation-link crayons-link crayons-link--block">TIK TOK</a></li>
+      <li><a href="https://www.pubg.com/en-us/" class="sidebar-navigation-link crayons-link crayons-link--block">PUBG MOBILE</a></li>
+        <li><a href="https://ff.garena.com/" class="sidebar-navigation-link crayons-link crayons-link--block">FREE FIRE</a></li>
+        <li><a href="https://m.mobilelegends.com/en" class="sidebar-navigation-link crayons-link crayons-link--block">MOBILE LEGEND</a></li>
+        
+      </ul>
+    </div>
+    
+    <div class="nav-content  light-green accent-3">
+      <ul class="tabs tabs-transparent">
+      
+        <li class="tab"><a class="active" href="/Posts"><font color="black">POSTS</font></a></li>
+        <li class="tab"><a class="active"href="/Coment"><font color="black">COMMENTS</font></a></li>
+        <li class="tab"><a class="active"href="/Albums"><font color="black">ALBUMS</font></a></li>
+        <li class="tab"><a class="active"href="/Photos"><font color="black">PHOTOS</font></a></li>
+        <li class="tab"><a class="active"href="/Todos"><font color="black">TODOS</font></a></li>
+        <li class="tab"><a class="active"href="/Users"><font color="black">USERS</font></a></li>
+        
+      </ul>
 
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+  <li><a href="https://materializecss.com/sass.html" class="sidebar-navigation-link crayons-link crayons-link--block">Sass</a></li>
+        <li><a href="https://materializecss.com/badges.html" class="sidebar-navigation-link crayons-link crayons-link--block">Components</a></li>
+        <li><a href="https://materializecss.com/collapsible.html" class="sidebar-navigation-link crayons-link crayons-link--block">JavaScript</a></li>
+  </ul>
+
+      
+        
+            
           <h1>DATA POSTS</h1>
           <table BORDER="2">
             <tr>
@@ -48,6 +77,7 @@ class Posts extends Component  {
               </tr>
               )}
           </table>
+          
           </center>
         </div>
     );
